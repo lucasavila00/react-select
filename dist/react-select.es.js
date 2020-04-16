@@ -825,7 +825,15 @@ var Select$1 = function (_React$Component) {
 			var pref = document.addEventListener ? '' : 'on';
 
 			document[eventTogglerName](pref + 'touchstart', this.handleTouchOutside);
-			document[eventTogglerName](pref + 'mousedown', this.handleTouchOutside);
+			document[eventTogglerName](pref + 'mousedown', this.handleMouseClickOutside);
+		}
+	}, {
+		key: 'handleMouseClickOutside',
+		value: function handleMouseClickOutside(event) {
+			if (!this.props.closeOnSelect && event.target && event.target.className.includes('Select-option')) {
+				return;
+			}
+			this.handleTouchOutside(event);
 		}
 	}, {
 		key: 'handleTouchOutside',
