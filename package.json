@@ -1,16 +1,16 @@
 {
-  "name": "react-select",
+  "name": "react-select-legacy",
   "version": "1.3.0",
   "description": "A Select control built with and for ReactJS",
   "main": "lib/index.js",
-  "jsnext:main": "dist/react-select.es.js",
-  "module": "dist/react-select.es.js",
-  "style": "dist/react-select.min.css",
+  "jsnext:main": "dist/react-select-legacy.es.js",
+  "module": "dist/react-select-legacy.es.js",
+  "style": "dist/react-select-legacy.min.css",
   "author": "Jed Watson",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JedWatson/react-select.git"
+    "url": "https://github.com/JedWatson/react-select-legacy.git"
   },
   "dependencies": {
     "classnames": "^2.2.4",
@@ -88,7 +88,12 @@
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register",
     "precommit": "lint-staged && yarn run test"
   },
-  "files": ["dist", "less", "lib", "scss"],
+  "files": [
+    "dist",
+    "less",
+    "lib",
+    "scss"
+  ],
   "keywords": [
     "combobox",
     "form",

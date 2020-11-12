@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Select from 'react-select';
+import Select from 'react-select-legacy';
 import './example.less';
 
 import Creatable from './components/Creatable';
@@ -25,7 +25,7 @@ ReactDOM.render(
 		<GithubUsers label="GitHub users (Async with fetch.js)" />
 		<NumericSelect label="Numeric Values" />
 		<BooleanSelect label="Boolean Values" />
-		<CustomRender label="Custom Render Methods"/>
+		<CustomRender label="Custom Render Methods" />
 		<CustomComponents label="Custom Placeholder, Option, Value, and Arrow Components" />
 		<Creatable
 			hint="Enter a value that's NOT in the list, then hit return"

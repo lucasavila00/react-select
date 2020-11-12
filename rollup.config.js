@@ -4,7 +4,7 @@ import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-es';
 
 const name = 'Select';
-const path = 'dist/react-select';
+const path = 'dist/react-select-legacy';
 const globals = {
 	classnames: 'classNames',
 	'prop-types': 'PropTypes',
@@ -21,7 +21,7 @@ const babelOptions = (production) => {
 	};
 	if (production) {
 		result.plugins.push('transform-react-remove-prop-types');
-	};
+	}
 	return result;
 };
 
